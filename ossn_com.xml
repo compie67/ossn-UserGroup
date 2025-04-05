@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component xmlns="http://www.opensource-socialnetwork.org/v/3.0">
+    <name>UserGroups</name>
+    <id>UserGroups</id>
+    <description>Toont publieke groepen van gebruikers op hun profielpagina</description>
+    <author>Eric Redegeld</author>
+    <author_url>https://nlsociaal.nl/</author_url>
+    <license>GNU General Public License v2</license>
+    <license_url>https://www.gnu.de/documents/gpl-2.0.en.html</license_url>
+    <version>1.0</version>
+    <requires>
+        <type>ossn_version</type>
+        <name>OssnGroups</name>
+        <version>8.1</version>
+    </requires>
+</component>
