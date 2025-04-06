@@ -81,13 +81,14 @@ if (!empty($all_groups)) {
         ));
 
         // Privacylabel ophalen
-        $privacy = isset($group_data->privacy)
-            ? ossn_print("privacy:{$group_data->privacy}")
-            : ossn_print("usergroups:privacy:unknown");
-
-        // Veiligheid en links
+		if ($group->membership == OSSN_PUBLIC) {
+    	    $privacy = ossn_print('public'); 
+		} elseif ($group->membership == OSSN_PRIVATE) {
+			$privacy = ossn_print('private');
+		}
+	        // Veiligheid en links
         $group_url = ossn_site_url("group/{$group_data->guid}");
-        $group_title = htmlspecialchars($group_data->title, ENT_QUOTES, 'UTF-8');
+        $group_title = $group_data->title;
 
         // HTML-kaart per groep
         $content .= "<div class='group-card' style='border:1px solid #ddd; border-radius:10px; overflow:hidden; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.05);'>
