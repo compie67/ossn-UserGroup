@@ -22,6 +22,7 @@ https://shadow.nlsociaal.nl/u/username/groups?sort=members
   - Newest first (`?sort=newest`)
   - Oldest first (`?sort=oldest`)
   - Most members (`?sort=members`)
+  - UPDATE addes sorting AtoZ and ZtoA
 - Responsive design — mobile-friendly  
 - Fully multilingual (Dutch and English supported)
 
