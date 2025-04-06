@@ -1,54 +1,46 @@
-# UserGroups Component for OSSN
-5-4-2025 raw version works, gives user overview owend Groups. 
-- in progress Thumbnail from the group cover
-- Slug(Fancy url) group/auto-sport instead og group/661/
+# UserGroups Component voor OSSN
 
-  
+Toont een overzicht van de groepen die een gebruiker beheert op zijn of haar publieke profielpagina, bijvoorbeeld op:
 
-This component displays an overview of the groups a user manages on their public profile page.
+```
+https://shadow.nlsociaal.nl/u/redegelde/groups?sort=members
+```
 
-Example URL:  
-https://shadow.nlsociaal.nl/u/username/groups?sort=members
+### 🧩 Functionaliteit
 
-
----
-
-## 🧩 Features
-
-- Displays group cover photos (if available)  
-- Shows member count for each group  
-- Integrates with OSSN's profile subpage structure  
-- Supports sorting:
-  - Newest first (`?sort=newest`)
-  - Oldest first (`?sort=oldest`)
-  - Most members (`?sort=members`)
-  - UPDATE addes sorting AtoZ and ZtoA
-- Responsive design — mobile-friendly  
-- Fully multilingual (Dutch and English supported)
+- Toont coverfoto’s van groepen (indien aanwezig)
+- Toont het aantal leden per groep
+- Maakt gebruik van de OSSN-profielsubpagina structuur
+- Ondersteunt sorteren op:
+  - Nieuwste eerst
+  - Oudste eerst
+  - Meeste leden
+- Mobielvriendelijk met responsieve layout
+- Volledig meertalig (NL en EN mogelijk)
 
 ---
 
-## 📦 Installation
+### 📦 Installatie
 
-1. Copy the `UserGroups` folder into your OSSN `/components` directory  
-2. Go to the OSSN admin panel and activate the component  
-3. Make sure the user is a member or owner of groups — otherwise, nothing will be displayed
-
----
-
-## 💶 Support this project
-
-This component is released under the [GNU General Public License v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
-
-> Do you like what we're building? Consider supporting our work:
-
-👉 [https://nlsociaal.nl/p/2248/steun-ons](https://nlsociaal.nl/p/2248/steun-ons) and make a choice off your favorite donation platform
-
-Any form of support is deeply appreciated ❤️
+1. Plaats de map `UserGroups` in je `/components`-map van OSSN
+2. Activeer de module via de beheerdersinterface
+3. Zorg dat de gebruiker lid is of eigenaar is van groepen voor zichtbare weergave
 
 ---
 
-## 👨‍💻 Authors
+### 💶 Ondersteun dit project
 
-- **Eric Redegeld** — [nlsociaal.nl](https://nlsociaal.nl)  
-- **ChatGPT/Copilot** — assistance, code review & documentation
+Deze OSSN-component is vrij beschikbaar onder de [GNU General Public License v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+
+> Vind je het waardevol wat we bouwen? Overweeg dan een kleine bijdrage om projecten als deze te ondersteunen:
+
+👉 **https://nlsociaal.nl/p/2248/steun-ons**
+
+Iedere vorm van steun wordt enorm gewaardeerd ❤️
+
+---
+
+### 👨‍💻 Auteurs
+
+- Eric Redegeld — [nlsociaal.nl](https://nlsociaal.nl)
+- ChatGPT/Copilot (ondersteuning, code review & structuur)
