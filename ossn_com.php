@@ -55,7 +55,7 @@ function com_UserGroups_page_handler($pages) {
 
     switch ($pages[0]) {
         case 'user':
-            $_GET['username'] = $pages[1];
+            ossn_set_input('username', $pages[1]);
             include __USERGROUPS__ . 'pages/user/groups.php';
             break;
 
@@ -86,7 +86,7 @@ function com_UserGroups_profile_link() {
  */
 function com_UserGroups_subpage_handler($hook, $type, $return, $params) {
     if ($params['subpage'] == 'groups') {
-        $_GET['username'] = $params['user']->username;
+		ossn_set_input('username', $params['user']->username);
         include __USERGROUPS__ . 'pages/user/groups.php';
     }
 }

@@ -4,9 +4,9 @@ $nl = array(
     'usergroups:members' => 'Leden: %s',
     'usergroups:privacy:unknown' => 'Onbekend',
     'groups' => 'Groepen',
-    'Sorteren op:' => 'Sorteren op:',
-    'Nieuwste eerst' => 'Nieuwste eerst',
-    'Oudste eerst' => 'Oudste eerst',
-    'Meeste leden' => 'Meeste leden',
+    'ossn:user:groups:sort' => 'Sorteren op:',
+    'ossn:user:groups:newest' => 'Nieuwste eerst',
+    'ossn:user:groups:oldest' => 'Oudste eerst',
+    'ossn:user:groups:members' => 'Meeste leden',	
 );
 ossn_register_languages('nl', $nl);
