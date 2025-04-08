@@ -22,10 +22,16 @@ https://shadow.nlsociaal.nl/u/username/groups?sort=members
   - Newest first (`?sort=newest`)
   - Oldest first (`?sort=oldest`)
   - Most members (`?sort=members`)
-  - UPDATE addes sorting AtoZ and ZtoA
+8-4-2025 UPDATE add sorting AtoZ and ZtoA
 - Responsive design — mobile-friendly  
 - Fully multilingual (Dutch and English supported)
-
+- 
+8-4-2025 feebvack from LiangLee
+** Fixed Translations ossn_print strings
+** Show group cover instead
+** Show dummy group cover. (royality free image)
+** Fixed group privacy
+** Remove html entity decode as it can result int XSS attack
 ---
 
 ## 📦 Installation
