@@ -1,3 +1,8 @@
+BUG!!!!!!
+code works, but only shows ten groups, not more
+
+
+
 # UserGroups Component for OSSN
 5-4-2025 raw version works, gives user overview owend Groups. 
 - in progress Thumbnail from the group cover
