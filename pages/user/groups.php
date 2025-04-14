@@ -24,6 +24,9 @@ $title = ossn_print('usergroups:title', array($user->username));
 // Fetch all groups owned by this user
 $group_class = new OssnGroup();
 $all_groups = $group_class->getUserGroups($user->guid);
+$count_groups = $group_class->getUserGroups($user->guid, array(
+				'count' => true,															 
+));
 
 // Sorteerformulier met alle opties
 // Sorting form with all available options
@@ -91,11 +94,7 @@ if (!empty($all_groups)) {
             $privacy = ossn_print('usergroups:privacy:unknown');
         }
 
-        // Veiligheid: groepsnaam ontsmetten tegen XSS
-        // Security: Escape group title to prevent XSS
-        $group_title = htmlspecialchars($group_data->title, ENT_QUOTES, 'UTF-8');
-        // 🔐 htmlspecialchars zorgt ervoor dat kwaadaardige HTML of scripts niet worden uitgevoerd in de browser.
-        // 🔐 htmlspecialchars ensures that malicious HTML or scripts cannot be executed in the browser.
+        $group_title $group_data->title
 
         // Link naar groep
         $group_url = ossn_site_url("group/{$group_data->guid}");
@@ -111,6 +110,7 @@ if (!empty($all_groups)) {
             </div>
         </div>";
     }
+    echo ossn_view_pagination($count_groups);
 } else {
     // Geen groepen gevonden
     // No groups found
