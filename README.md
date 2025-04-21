@@ -1,14 +1,7 @@
-BUG!!!!!!
-code works, but only shows ten groups, not more
-
-
+WARNING!!!!! stand alone this works, but when using the module GroepSlugRouter remove this module
 
 # UserGroups Component for OSSN
-5-4-2025 raw version works, gives user overview owend Groups. 
-- in progress Thumbnail from the group cover
-- Slug(Fancy url) group/auto-sport instead og group/661/
 
-  
 
 This component displays an overview of the groups a user manages on their public profile page.
 
